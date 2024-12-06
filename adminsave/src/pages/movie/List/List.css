@@ -1,0 +1,110 @@
+.lists-container {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  background-color: #212121; /* Dark background for a sleek look */
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-container {
+  align-self: flex-end;
+  margin: 1rem 0;
+}
+
+.table-container,
+.movie-lists {
+  width: 100%;
+}
+
+.table-container {
+  text-align: center;
+}
+
+button {
+  width: 120px;
+  color: white;
+  margin-left: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+/* Delete button: Aggressive Racing Red */
+.delete {
+  background-color: #d9534f; /* Darker Racing Red */
+  box-shadow: 0 4px 10px rgba(217, 83, 79, 0.3); /* Soft red glow */
+}
+
+.delete:hover {
+  background-color: #c9302c; /* Brighter Racing Red on hover */
+  transform: translateY(-4px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(201, 48, 44, 0.5); /* Stronger red glow on hover */
+}
+
+.delete:active {
+  transform: translateY(2px); /* Push effect */
+}
+
+/* Edit button: Racing Blue (for moderation) */
+.edit {
+  background-color: #0275d8; /* Racing Blue */
+  box-shadow: 0 4px 10px rgba(2, 117, 216, 0.3); /* Soft blue glow */
+}
+
+.edit:hover {
+  background-color: #025aa5; /* Darker blue on hover */
+  transform: translateY(-4px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(2, 90, 165, 0.5); /* Stronger blue glow on hover */
+}
+
+.edit:active {
+  transform: translateY(2px); /* Push effect */
+}
+
+.edit:disabled {
+  background-color: #d1e0e0;
+  cursor: not-allowed;
+}
+
+
+/* Create button: Racing Green (Action-oriented for creating new items) */
+.create {
+  background-color: #27ae60; /* Racing Green */
+  font-size: 16px;
+  font-weight: bold;
+  width: 160px;
+  border-radius: 50px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.create:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+  transform: translateY(-4px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(39, 174, 96, 0.5); /* Stronger green glow */
+}
+
+.create:active {
+  transform: translateY(2px); /* Push effect */
+}
+
+.create:disabled {
+  background-color: #f8c8c8;
+  cursor: not-allowed;
+}
+
+.tile-cell {
+  text-align: justify;
+}

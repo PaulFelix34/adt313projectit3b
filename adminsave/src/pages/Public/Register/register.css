@@ -1,0 +1,168 @@
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.6); /* Orange glow for hover effect */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.Register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(220, 20, 60, 0.8), /* Racing red */
+    rgba(0, 0, 0, 0.8), /* Dark background */
+    rgba(169, 169, 169, 0.7) /* Metallic gray */
+  );
+  background-size: 300% 300%;
+  animation: zoomIn 1s ease-out, bgAnimation 5s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 300% 300%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 300% 300%;
+  }
+}
+
+.main-container {
+  width: 350px;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2.5rem;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  animation: zoomIn 1.5s ease-out; /* Animate form zoom */
+}
+
+.main-container h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #e74c3c; /* Racing red */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #d32f2f; /* Rich red for labels */
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 1rem;
+  font-size: 1rem;
+  background: #34495e;
+  color: #ecf0f1;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #f50057; /* Focus border in vibrant pink */
+  box-shadow: 0 0 8px rgba(245, 0, 87, 0.6); /* Light pink glow on focus */
+}
+
+.show-password {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #f50057; /* Vibrant pink for the "Show Password" toggle */
+  text-align: right;
+  margin-top: -0.5rem;
+}
+
+.show-password:hover {
+  text-decoration: underline;
+}
+
+.submit-container {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #e74c3c;
+  padding: 0.9rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: zoomIn 2s ease-out; /* Animate the button appearance */
+}
+
+.btn-primary:hover {
+  background-color: #c0392b;
+  animation: buttonHover 0.5s ease-in-out; /* Hover animation on the button */
+}
+
+.register-container {
+  grid-column: span 2;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #ad1457; /* Deep pink for the register message */
+  text-align: center;
+}
+
+.register-container a {
+  color: #d81b60; /* Soft bright pink for links */
+  text-decoration: none;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+  animation: zoomIn 1s ease-out; /* Animate link hover */
+}
+
+.errors {
+  color: #f50057;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

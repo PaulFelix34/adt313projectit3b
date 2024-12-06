@@ -1,0 +1,80 @@
+.Main .container {
+  display: flex;
+  width: 100vw;
+  gap: 20px;
+}
+
+.Main .container .outlet {
+  flex-grow: 3;
+  padding: 3rem;
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Main .container .navigation {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: #212121; /* Dark, sleek color for high-performance feel */
+  color: #fff;
+  width: 250px;
+  padding-top: 30px;
+  z-index: 1000;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Main .container .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Main .container .navigation ul li {
+  padding: 15px 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  position: relative;
+}
+
+.Main .container .navigation ul li.active,
+.Main .container .navigation ul li:hover {
+  background: #c0392b; /* Racing-inspired red */
+  cursor: pointer;
+  transform: translateX(10px); /* Adds a subtle rightward motion to mimic speed */
+}
+
+.Main .container .navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.Main .container .navigation ul li.logout {
+  cursor: pointer;
+  margin-top: auto;
+  color: #c0392b;
+  font-weight: bold; /* Adds a sporty, bold feel */
+}
+
+.Main .container .navigation ul li.logout:hover {
+  background-color: #c0392b;
+}
+
+.Main .container .navigation ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 100%;
+  background-color: #c0392b;
+  transform: translateY(-50%);
+  transition: width 0.3s ease;
+}
+
+.Main .container .navigation ul li:hover::before {
+  width: 8px; /* Expands the stripe on hover */
+}

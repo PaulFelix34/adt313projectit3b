@@ -1,0 +1,90 @@
+.main-containerr {
+  padding: 20px;
+  color: #fff;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  justify-content: flex-start; /* Align content to the top */
+  gap: 20px; /* Add spacing between elements */
+}
+
+.page-title {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0; /* Remove extra margins */
+  align-self: flex-start; /* Ensure title aligns with the left side */
+}
+
+.featured-list-container {
+  width: 100%; /* Adjust to use full width */
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+}
+
+.featured-backdrop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  border-radius: 10px;
+}
+
+.featured-movie-title {
+  background: rgba(0, 0, 0, 0.7); /* Use darker background for better contrast */
+  color: #e50914; /* Highlight title with Netflix-style red */
+  padding: 10px;
+  position: absolute;
+  top: 440px;
+  left: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Make it responsive */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.MovieCards {
+  height: 300px;
+  background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.MovieCards:hover {
+  transform: scale(1.05); /* Add a zoom effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a hover shadow */
+}
